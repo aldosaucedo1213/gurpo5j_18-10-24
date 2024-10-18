@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>saucedo</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href= "{% static 'estilos.css' %}">
+    </head>
+    <body>
+        <h1>arriba las chivas </h1>
+        <h1>aldo saucedo</h1>
+        <HR>
+    
+            {% for i in misalumnos %}
+
+              <li>{{i.Nombre}}</li>
+            {% endfor %}
+
+            <HR>
+        <script src="{% static 'script.js' %}" ></script>
+    </body> 
+</html>
